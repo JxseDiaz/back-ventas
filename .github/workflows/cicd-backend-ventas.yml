@@ -43,5 +43,5 @@ jobs:
 
       - name: "8. Deploy en EKS"
         run: |
-          kubectl rollout restart deployment/backend-ventas -n innovatech
-          kubectl rollout status deployment/backend-ventas -n innovatech --timeout=180s
+          kubectl rollout restart deployment/backend-ventas -n innovatech --insecure-skip-tls-verify
+          kubectl rollout status deployment/backend-ventas -n innovatech --timeout=180s --insecure-skip-tls-verify
