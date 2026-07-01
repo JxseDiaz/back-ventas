@@ -3,7 +3,7 @@ name: CI/CD Backend Ventas - EKS Deploy
 on:
   push:
     branches:
-      - deploy
+      - main
 
 jobs:
   build-and-deploy:
